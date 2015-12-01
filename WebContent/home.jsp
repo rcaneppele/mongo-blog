@@ -13,5 +13,6 @@
 	<h1>WELCOME!</h1>
 	
 	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/js/blog.js"></script>
 </body>
 </html>
