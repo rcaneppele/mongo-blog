@@ -6,6 +6,7 @@
 	<title>Mongo Blog</title>
 	
 	<link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="resources/css/clean-blog.min.css" />
 </head>
 
 <body>
