@@ -11,5 +11,7 @@
 
 <body>
 	<h1>WELCOME!</h1>
+	
+	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
 </body>
 </html>
