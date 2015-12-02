@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<jsp:include page="/WEB-INF/layout/menu.jsp"/>
+	<jsp:include page="/WEB-INF/views/layout/menu.jsp"/>
 	
 	<header class="intro-header">
 		<div class="container">
@@ -45,7 +45,7 @@
 		</div>
 	</main>
 	
-	<jsp:include page="/WEB-INF/layout/footer.jsp" />
+	<jsp:include page="/WEB-INF/views/layout/footer.jsp" />
 	
 	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/js/blog.js"></script>

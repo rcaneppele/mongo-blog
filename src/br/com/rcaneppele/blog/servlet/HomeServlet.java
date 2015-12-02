@@ -15,7 +15,7 @@ public class HomeServlet extends HttpServlet {
 
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		req.getRequestDispatcher("home.jsp").forward(req, res);
+		req.getRequestDispatcher("WEB-INF/views/home.jsp").forward(req, res);
 	}
 	
 }
