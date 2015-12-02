@@ -12,12 +12,14 @@ public class Post {
 	private String autor;
 	private String dataPublicacao;
 	private String titulo;
+	private String resumo;
 	private String conteudo;
 	
-	public Post(String autor, String dataPublicacao, String titulo, String conteudo) {
+	public Post(String autor, String dataPublicacao, String titulo, String resumo, String conteudo) {
 		this.autor = autor;
 		this.dataPublicacao = dataPublicacao;
 		this.titulo = titulo;
+		this.resumo = resumo;
 		this.conteudo = conteudo;
 	}
 	
@@ -68,6 +70,9 @@ public class Post {
 	}
 	public String getTitulo() {
 		return titulo;
+	}
+	public String getResumo() {
+		return resumo;
 	}
 	public String getConteudo() {
 		return conteudo;
