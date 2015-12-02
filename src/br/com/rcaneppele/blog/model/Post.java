@@ -1,35 +1,20 @@
 package br.com.rcaneppele.blog.model;
 
-import java.time.LocalDate;
-
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-
+import org.bson.types.ObjectId;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
-@XmlRootElement
-@XmlAccessorType(XmlAccessType.FIELD)
-@Entity
+@Entity("posts")
 public class Post {
 	
 	@Id
-	private Long id;
+	private ObjectId id;
 	private String autor;
-	private LocalDate dataPublicacao;
+	private String dataPublicacao;
 	private String titulo;
 	private String conteudo;
-
-	public Post(String autor, LocalDate dataPublicacao, String titulo, String conteudo) {
-		this.autor = autor;
-		this.dataPublicacao = dataPublicacao;
-		this.titulo = titulo;
-		this.conteudo = conteudo;
-	}
-
-	public Post(Long id, String autor, LocalDate dataPublicacao, String titulo, String conteudo) {
-		this.id = id;
+	
+	public Post(String autor, String dataPublicacao, String titulo, String conteudo) {
 		this.autor = autor;
 		this.dataPublicacao = dataPublicacao;
 		this.titulo = titulo;
@@ -37,11 +22,11 @@ public class Post {
 	}
 	
 	/*
-	 * JAX-B eyes only!
+	 * Morphia Eyes Only! 
 	 */
 	protected Post() {
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -72,13 +57,13 @@ public class Post {
 		return "POST[ID = " +id +"; Autor = " +autor +"]";
 	}
 
-	public Long getId() {
+	public ObjectId getId() {
 		return id;
 	}
 	public String getAutor() {
 		return autor;
 	}
-	public LocalDate getDataPublicacao() {
+	public String getDataPublicacao() {
 		return dataPublicacao;
 	}
 	public String getTitulo() {
