@@ -12,27 +12,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-header page-scroll">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-					<span class="sr-only">Mostrar Menu</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/home">Home</a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<jsp:include page="/WEB-INF/layout/menu.jsp"/>
 	
 	<header class="intro-header">
 		<div class="container">
@@ -65,43 +45,7 @@
 		</div>
 	</main>
 	
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-					<ul class="list-inline text-center">
-						<li>
-							<a href="#">
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-						</li>
-
-						<li>
-							<a href="#">
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-						</li>
-                        
-						<li>
-							<a href="#">
-								<span class="fa-stack fa-lg">
-									<i class="fa fa-circle fa-stack-2x"></i>
-									<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-								</span>
-							</a>
-						</li>
-					</ul>
-					<p class="copyright text-muted">Copyright © MongoDB Blog 2015</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<jsp:include page="/WEB-INF/layout/footer.jsp" />
 	
 	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/js/blog.js"></script>
