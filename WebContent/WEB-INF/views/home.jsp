@@ -40,6 +40,6 @@
 	<jsp:include page="/WEB-INF/views/layout/footer.jsp" />
 	
 	<script type="text/javascript" src="resources/js/jquery.min.js"></script>
-	<script type="text/javascript" src="resources/js/blog.js"></script>
+	<script type="text/javascript" src="resources/js/carregaPostsNaHome.js"></script>
 </body>
 </html>
