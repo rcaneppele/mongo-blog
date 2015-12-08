@@ -28,6 +28,10 @@ public class Post {
 	 */
 	protected Post() {
 	}
+	
+	public String getTituloSubstituindoEspacosPorHifens() {
+		return this.titulo.replace(" ", "-");
+	}
 
 	@Override
 	public int hashCode() {
@@ -77,5 +81,5 @@ public class Post {
 	public String getConteudo() {
 		return conteudo;
 	}
-	
+
 }

@@ -21,5 +21,8 @@ public class PostDao {
 		return ds.createQuery(Post.class).asList();
 	}
 
+	public void cadastra(Post post) {
+		ds.save(post);
+	}
 	
 }
